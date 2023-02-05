@@ -1,0 +1,14 @@
+//TO PRINT MULTIPLCATION TABLE 
+
+#include <stdio.h>
+
+int main(){
+    
+    int num, times,i;
+    printf("Enter a number and number of times to be multiplied\n\n");
+    scanf("%d %d", &num, &times);
+    
+    for(i=1;i<=times;i++){
+        printf("%d X %d = %d\n", num, i, num*i);}
+return 0;
+}

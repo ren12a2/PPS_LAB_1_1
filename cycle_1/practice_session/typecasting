@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main(){
+	char ch='a';
+	int a,b;
+	printf("enter first number and second number\n\n");
+	scanf("%d %d",&a,&b);
+	int sum=a+ch;
+	float div;
+	div=(float)a/b;
+	printf(" IMPLICIT TYPECASTING : \n\n");
+	printf("ASCII of a is : %d \n", ch);
+	printf("ASCII of %c + first number =  %d\n\n", ch, sum );
+	printf("EXPLICIT TYPECASTING :\n\n");
+	printf("the quotient is %f",div);
+	return;
+}

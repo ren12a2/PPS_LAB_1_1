@@ -1,0 +1,22 @@
+/ gcd without recursive
+#include <stdio.h>
+int gcd(int,int);
+void main(){
+int a,b,res;
+printf("gcd without recursive function\n");
+printf("Enter two numbers\n");
+scanf("%d %d", &a, &b);
+res=gcd(a,b);
+printf("The gcd is %d\n", res);
+return;
+}
+
+int gcd(int m, int n){
+if(m<n)
+return gcd(n,m);
+
+if(n==0)
+return m;
+
+return gcd(n,m%n);
+}

@@ -1,0 +1,25 @@
+//CLASS AWARDED FOR PERCENTAGE USING ELSE IF
+
+#include <stdio.h>
+
+int main() {
+
+   float perc;
+   printf("Enter percentage\n");
+   scanf("%f", &perc);
+   printf("Class awarded for %f % = ", perc);
+   
+    if(perc>=70)
+    printf("Distinction");
+    
+    else if(perc>=60)
+    printf("First class");
+    
+    else if(perc>=40)
+    printf("Second class");
+    
+    else if(perc<=40)
+    printf("Failed");
+    
+    return 0;
+}

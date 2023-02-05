@@ -1,0 +1,18 @@
+SIMPLE COMPOUND INTEREST
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+    
+    float p,r,t,s,c;
+    printf("Enter principal amt, rate, time in years\n");
+    scanf("%f %f %f ", &p, &r, &t);
+    
+    s=p*r*(t/100);
+    printf("simple interest = %f\n", s);
+    
+    c=p*pow(1+r/100,t);
+     printf("compound interest = %f\n", c);
+      
+return;
+}

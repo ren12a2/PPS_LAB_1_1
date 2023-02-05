@@ -1,0 +1,18 @@
+//TO FIND MAX AND MIN OF 3 NUMBERS
+
+#include <stdio.h>
+
+int main(){
+    
+   int a,b,c,d,e;
+    printf("Enter 3 numbers\n");
+    scanf("%d %d %d ", &a, &b, &c);
+    
+    d= a>b?(a>c?a:c):(b>c?b:c);
+    printf("Greater no is %d", d);
+    
+    e= a<b?(a<c?a:c):(b<c?b:c);
+    printf("Lesser no is %d", e);
+    
+return 0;
+}

@@ -1,0 +1,20 @@
+//Sum of digits and Palindrome check
+#include <stdio.h>
+int main() {
+  int num,sum=0,rev=0,r,n;
+  printf("Enter a no\n");
+  scanf("%d", &num);
+  n=num;
+  while(n>0){
+      r=n%10;
+      sum=sum+r;
+      rev=(rev*10)+r;
+      n=n/10;
+  }
+    printf("The sum of digits is %d\n", sum);
+    if(num==rev)
+    printf("%d is a palindrome\n", num);
+    else
+    printf("%d is not a palindrome\n", num);
+    return 0;
+}

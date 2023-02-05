@@ -1,0 +1,32 @@
+//min max avg in array of integers :
+#include<stdio.h>
+void main(){
+int n,i;
+int a[100];
+int maxval,min,sum=0;
+
+printf("Enter no of elements in array not more than 100:");
+scanf("%d",&n);
+
+for(i=0;i<n;i++){
+printf("\nEnter:");
+scanf("%d", &a[i]);}
+
+maxval=a[0];
+min=a[0];
+for(i=0;i<n;i++){
+sum=sum+a[i];
+
+if(a[i]>maxval)
+maxval=a[i];
+
+if(a[i]<min)
+min=a[i];}
+
+printf("sum of elements is %d\n", sum);
+printf("average is %f\n", (float)sum/(float)n);
+printf("max of array is %d\n", maxval);
+printf("min of array is %d", min);
+
+return;
+}

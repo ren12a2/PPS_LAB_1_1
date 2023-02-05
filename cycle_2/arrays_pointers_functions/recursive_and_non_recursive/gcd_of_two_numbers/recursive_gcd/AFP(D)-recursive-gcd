@@ -1,0 +1,22 @@
+// gcd with recursive
+#include <stdio.h>
+int gcd(int,int);
+void main(){
+int a,b, res;
+printf("gcd with recursive function\n");
+printf("Enter two numbers\n");
+scanf("%d %d", &a, &b);
+res=gcd(a,b);
+printf("The gcd is %d", res);
+return;}
+
+
+int gcd(int a, int b){
+int temp;
+while(a%b!=0){
+temp=a%b;
+a=b;
+b=temp;
+}
+return b;
+}

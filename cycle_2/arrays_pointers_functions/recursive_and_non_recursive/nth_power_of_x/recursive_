@@ -1,0 +1,19 @@
+// nth power of x 
+#include<stdio.h>
+#include<math.h>
+int power(int,int);
+void main(){
+int x,n, res;
+printf("Using recursive\n");
+printf("Enter number and its power\n");
+scanf("%d %d", &x, &n);
+res=power(x,n);
+printf("%d^(%d) = %d",x,n, res);
+return;
+}
+
+int power(int x, int n){
+if(n==0)
+return 1;
+else
+return pow(x,n); }
